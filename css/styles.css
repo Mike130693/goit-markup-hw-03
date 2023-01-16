@@ -15,7 +15,8 @@
   --team-bckgd-color: #f4f4fd;
   --header-border-color: #e7e9fc;
   --portfolio-btn-border-color: #e7e9fc;
-  --portfolio-item-border-color: #E7E9FC;
+  --portfolio-item-border-color: #e7e9fc;
+  --team-content-bckgd-color: #ffffff;
 }
 
 body {
@@ -45,7 +46,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 auto;
+  margin: 0;
 }
 ul {
   margin: 0;
@@ -209,6 +210,11 @@ img {
 }
 .team-content {
   padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--team-content-bckgd-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   font-size: 20px;
@@ -238,7 +244,6 @@ img {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--footer-logo-color);
 }
 .footer-txt {
@@ -268,7 +273,10 @@ img {
   row-gap: 48px;
 }
 .portfolio-content {
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--portfolio-item-border-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -302,5 +310,4 @@ img {
 }
 .portfolio-item {
   width: calc((100% - 48) / 3);
-  border: 1px solid var(--portfolio-item-border-color);
 }
