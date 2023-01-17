@@ -25,8 +25,8 @@ body {
   color: var(--main-color);
 }
 .container {
-  margin-left: 141px;
-  margin-right: 141px;
+  width: 1158px;
+  margin: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -57,6 +57,8 @@ button {
 }
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 /*---------HEADER--------*/
 .header {
@@ -104,7 +106,6 @@ img {
 }
 .address {
   margin-left: auto;
-  padding-right: 15px;
 }
 .mail-tel {
   display: flex;
@@ -120,19 +121,21 @@ img {
 /*---------HERO--------*/
 .hero {
   background-color: var(--hero-footer-background-color);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 473px;
+  display: flex;
+  justify-content: center;
+}
+.header-container {
+  
 }
 .main-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
-  display: flex;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
   width: 496px;
   height: 120px;
-  margin-left: 317px;
+  text-align: center;
+  margin-bottom: 48px;
   color: var(--studio-btn-txt-color);
 }
 .main-btn {
@@ -143,9 +146,8 @@ img {
   letter-spacing: 0.04em;
   border-radius: 4px;
   border-color: transparent;
-  min-width: 169px;
-  height: 56px;
-  margin-left: 480px;
+  padding: 16px 32px;
+  margin-left: 163px;;
   background-color: var(--studio-btn-color);
   color: var(--studio-btn-txt-color);
 }
@@ -161,6 +163,9 @@ img {
 .features-list {
   display: flex;
   gap: 24px;
+}
+.features-list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .features-title {
   font-size: 20px;
@@ -188,7 +193,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /*---------TEAM--------*/
 .team {
@@ -206,7 +211,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-content {
   padding-top: 32px;
@@ -256,17 +261,15 @@ img {
 }
 /*---------PORTFOLIO--------*/
 .portfolio-navigation {
-  display: flex;
   gap: 24px;
-  flex-direction: row;
-  align-items: flex-start;
+  display: flex;
+  justify-content: center;
   padding: 0px;
   margin-top: 96px;
   margin-bottom: 72px;
-  margin-left: 271px;
 }
 .portfolio-list {
-  padding-bottom: 120px;
+  margin-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -277,6 +280,7 @@ img {
   padding-bottom: 32px;
   padding-left: 16px;
   border: 1px solid var(--portfolio-item-border-color);
+  border-top: 1px #fff;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -309,5 +313,5 @@ img {
   color: var(--second-txt-color);
 }
 .portfolio-item {
-  width: calc((100% - 48) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
