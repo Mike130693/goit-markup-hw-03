@@ -109,6 +109,7 @@ img {
 }
 .mail-tel {
   display: flex;
+  letter-spacing: normal;
   gap: 40px;
 }
 .contacts {
@@ -279,8 +280,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid var(--portfolio-item-border-color);
-  border-top: 1px ivory;
+  border-right: 1px solid var(--portfolio-item-border-color);
+  border-bottom: 1px solid var(--portfolio-item-border-color);
+  border-left: 1px solid var(--portfolio-item-border-color);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
