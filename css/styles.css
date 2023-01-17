@@ -26,7 +26,7 @@ body {
 }
 .container {
   width: 1158px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -122,9 +122,7 @@ img {
 /*---------HERO--------*/
 .hero {
   background-color: var(--hero-footer-background-color);
-  padding: 188px 473px;
-  display: flex;
-  justify-content: center;
+  padding: 188px 0px;
 }
 .header-container {
 }
@@ -133,8 +131,8 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   width: 496px;
-  height: 120px;
   text-align: center;
+  margin: auto;
   margin-bottom: 48px;
   color: var(--studio-btn-txt-color);
 }
@@ -147,7 +145,11 @@ img {
   border-radius: 4px;
   border-color: transparent;
   padding: 16px 32px;
-  margin-left: 163px;
+  margin-top: 48px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   background-color: var(--studio-btn-color);
   color: var(--studio-btn-txt-color);
 }
