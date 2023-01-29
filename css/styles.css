@@ -36,9 +36,6 @@ body {
 .link {
   text-decoration: none;
 }
-.visually {
-  color: var(--studio-btn-txt-color);
-}
 h1,
 h2,
 h3,
